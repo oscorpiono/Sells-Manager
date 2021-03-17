@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Des Ventes</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="shortcut icon" href="Images/trade.png" />
+</head>
+<body>
+    <nav>
+        <div class="TopSide">
+            <div class="Title">
+                <a>Gestion Des Ventes</a>
+            </div>
+            <div class="Log">
+                <a href="/" class="State">Login</a>
+            </div>
+        </div>
+        <div class="BottomSide">
+            <div class="NavLinks">
+                <ul>
+                    <li>
+                        <a href="/Pages/Articles.php">Articles</a>
+                    </li>
+                    <li>
+                        <a href="#">Clients</a>
+                    </li>
+                    <li>
+                        <a href="#">Stock</a>
+                    </li>
+                    <li>
+                        <a href="#">Commades</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Hum">
+                <div class="Sign"><p class="Sign1">></p></div>
+                <div class="Text"><p>Liste</p></div>
+            </div>
+        </div>
+    </nav>
+    <div class="SmallNavLinks">
+        <ul>
+            <li>
+                <a href="/Pages/Articles.php">Articles</a>
+            </li>
+            <li>
+                <a href="#">Clients</a>
+            </li>
+            <li>
+                <a href="#">Stock</a>
+            </li>
+            <li>
+                <a href="#">Commades</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </ul>
+    </div>
+    <section class="Home">
+        <div class="Container">
+            <div class="Etape1 et">
+                <div class="Etaps">
+                    <img src="Images/recruitment.png"/>
+                </div>
+                <div class="Title">
+                    <h1>Trouvez Votre Client</h1>
+                    <p>Vous pouvez trouver votre client seulment par scanner son code barre</p>
+                </div>
+            </div>
+            <div class="Etape2 et">
+                <div class="Etaps">
+                    <img src="Images/search.png"/>
+                </div>
+                <div class="Title">
+                    <h1>Trouvez Votre Produit</h1>
+                    <p>Vous pouvez trouver votre produit seulment par scanner son code barre</p>
+                </div>
+            </div>
+            <div class="Etape3 et" style="margin-top: 40px;">
+                <div class="Etaps">
+                    <img src="Images/sell.png"/>
+                </div>
+                <div class="Title">
+                    <h1>Vendre Votre Produit</h1>
+                    <p>N'hésitez pas à vendre votre produit, nous ferons tout le travail de caculation</p>
+                </div>
+            </div>
+            <div class="Etape4 et" style="margin-top: 40px;">
+                <div class="Etaps">
+                    <img src="Images/research.png"/>
+                </div>
+                <div class="Title">
+                    <h1>obtenir le résultat final</h1>
+                    <p>vous pouvez obtenir le résultat final de toutes les ventes en un seul clic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var hum = document.querySelector(".Hum");
+        hum.addEventListener("click", ()=>
+        {
+            document.querySelector(".SmallNavLinks").classList.toggle("Active");
+            if(document.querySelector("body").style.overflowY != "hidden"){
+                document.querySelector("body").style.overflowY = "hidden";
+            document.querySelector(".Sign1").innerText = "<";
+            }else{
+                document.querySelector("body").style.overflowY = "auto";
+            document.querySelector(".Sign1").innerText = ">";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+@font-face
+{
+    font-family: UtmAvo;
+    src: url("/Fonts/UTM Avo.ttf");
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: UtmAvo;
+    color: white;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+nav
+{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+body
+{
+    background-image: url("/Images/536.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-y: auto;
+    height: 125vh;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    zoom: 80%;
+}
+
+.BottomSide{
+    background-color: rgb(244 182 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+}
+
+.Log
+{
+    position: absolute;
+    right: 50px;
+}
+
+.Log a
+{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.TopSide
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(237 147 33);
+    height: 45px;
+}
+
+.Title
+{
+    font-size: 20px;
+}
+
+.Title a
+{
+    text-decoration: none;
+}
+
+.NavLinks ul
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    user-select: none;
+}
+.NavLinks ul li
+{
+    padding: 15px;
+}
+
+.NavLinks ul li a
+{
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.Hum
+{
+    width: fit-content;
+    height: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Hum p
+{
+    user-select: none;
+}
+.Sign
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Sign p
+{
+    margin-right: 10px;
+    height: 100%;
+}
+
+.SmallNavLinks
+{
+    background-color: rgb(244 182 45);
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    position: fixed;
+    z-index: 999;
+    margin-top: 90px;
+}
+.SmallNavLinks ul
+{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    user-select: none;
+}
+.SmallNavLinks ul a
+{
+    text-decoration: none;
+}
+.Etaps img
+{
+    width: 100px;
+}
+
+.Home .Etaps
+{
+    width: 250px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home .Etaps::before
+{
+    content: "";
+    border-radius: 50%;
+    border: 3px solid black;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    z-index: -1;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.568), rgb(255, 255, 255));
+}
+
+.Home
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    height: fit-content;
+}
+
+.Container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 700px;
+    height: 80%;
+    flex-wrap: wrap;
+}
+.Home .Title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(221, 221, 221, 0.473);
+    padding: 20px;
+    border-radius: 25px;
+}
+.Container h1
+{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Container p
+{
+    color: rgb(41, 41, 41);
+    text-align: center;
+    font-size: 15px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.et
+{
+    width: 250px;
+    padding: 0px 10px 0px 10px;
+}
+
+.ArtHome
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ArtHome ul
+{
+    list-style: none;
+}
+
+.ArtHome a, .ArtHome p
+{
+    color: #182b6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ArtHome .LinksContainer
+{
+    background-color: rgb(171 229 233 / 67%);
+    padding: 20px;
+    border-radius: 25px;
+    width: 90%;
+}
+
+.ArtHome ul li
+{
+    padding: 10px;
+    text-align: center;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ArtInsert table, #ArtInsert tr, #ArtInsert td
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+tbody
+{
+    width: 100%;
+}
+
+table td
+{
+    width: 100%;
+    max-width: 400px;
+}
+
+table
+{
+    width: 100%;
+}
+
+table tr
+{
+    padding: 10px;
+}
+
+.LinksContainer a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+}
+
+.ArtHome p
+{
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+td .img
+{
+    width: 100px;
+    height: 100px;
+}
+
+.Print, .download
+{
+    cursor: pointer;
+}
+
+td span
+{
+    color: red;
+}
+
+#Code
+{
+    border-radius: 25px;
+    border: 2px solid white;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+}
+
+input
+{
+    color: black;
+}
+
+#ArtInsert input[type="text"]
+{
+    border-radius: 25px;
+    height: 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    text-align: center;
+    width: 60%;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#ArtInsert input[type="text"]:focus
+{
+    width: 100%;
+    outline: none !important;
+}
+
+input:focus
+{
+    outline: none !important;
+}
+#ArtList tr
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+#ArtList th, #ArtList td
+{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LinksContainer input[type="submit"], .LinksContainer input[type="button"], .LinksContainer table tr td a
+{
+    border-radius: 25px;
+    height: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: #182b6b;
+    width: 60%;
+    max-width: 100px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    transition: 0.5s all;
+    font-weight: lighter;
+    padding: 0;
+}
+.LinksContainer input[type="submit"]:hover, .LinksContainer input[type="button"]:hover, .LinksContainer table tr td a:hover
+{
+    width: 100%;
+    max-width: 200px;
+    background-color: rgb(151, 202, 206);
+    color: white;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 600px)
+{
+    .NavLinks
+    {
+        display: none;
+    }
+    .Hum
+    {
+        display: flex;
+    }
+    .Title
+    {
+        font-size: 15px;
+    }
+    .Log
+    {
+        display: none;
+    }
+
+    .Active
+    {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    #ArtList *
+    {
+        font-size: 4vw;
+    }
+
+    #ArtList table a
+    {
+        width: 60px;
+    }
+}
